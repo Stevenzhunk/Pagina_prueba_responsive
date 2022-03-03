@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6433d0dc9d.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+   <header class="header">
+      <nav class="nav">
+        
+        <a href="#" class="logo nav-link"> MTG</a>
+        <button class="nav-toggle" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i> 
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Sealeds</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link">Individual</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link"> Community</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link nav-link nav-menu-link_active ">Sell</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        
+      </nav> 
+   </header>
+   
+   <!----Esto es el slider-->
+   <div class="container">
+        <ul class="slider">
+            <li id="slider1">
+                <img src="slider1.jpg"/>
+                <div class="texto-slider1">Know you world
+                    <button class="btn" href="www.google.com">Join to MTG</button>
+                </div>           
+            </li>
+            <li id="slider2">
+                <img src="slider2.jpg"/>
+                <div class="texto-slider1">Eternal Master 
+                    <button class="btn" href="#">More information here</button>
+                </div>
+                <!--fin prueba de boton-->
+            </li>
+            <li id="slider3">
+                <img src="slider3.jpg"/>
+                <div class="texto-slider1">Modern Master
+                    <button class="btn" href="#">Known the collection</button>
+                </div>  
+            </li>
+            
+        </ul>  
+        <ul class="menu">
+            <li>
+                <a href="#slider1">1</a>
+            </li>
+            <li>
+                <a href="#slider2">2</a>
+            </li>
+            <li>
+                <a href="#slider3">3</a>
+            </li>
+
+        </ul> 
+   </div>
+   <div class="container elements">
+
+    <!----esto es una prueba de html agregada-->
+    
+    <div class="prueba">
+        <h2>Best selling cards</h2>
+    </div>
+    <div class="contenedor-cartas">
+            
+        <div class="cartas1">
+            <div>
+                <div class="catalogItem black cardItem" style="width: 100%; display: inline-block;">
+                <a href="#" data-cktag="Kaldheim: Esika, God of the Tree" class="black cardLink" tabindex="0">
+                    <img src="esika.jpg" alt="Kaldheim: Esika, God of the Tree" title="Kaldheim: Esika, God of the Tree" class="sliderItemcardSrcb-lazy" style="opacity: 1;">
+                </a> 
+                    <div class="sliderDescription">
+                        <a href="#" data-cktag="Kaldheim: Esika, God of the Tree" tabindex="0">
+                          <span class="sliderDescriptionName">Kaldheim: Esika God of the Tree</span> 
+                          <span class="sliderDescriptionPrice">$8.00 / $10.40</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cartas1">
+            <div><div class="catalogItem black cardItem" style="width: 100%; display: inline-block;"><a href="#" data-cktag="New Phyrexia Foil: Mutagenic Growth" class="black cardLink" tabindex="0"><img src="mutagenic.jpg" alt="New Phyrexia Foil: Mutagenic Growth" title="New Phyrexia Foil: Mutagenic Growth" class="sliderItemcardSrcb-lazy" style="opacity: 1;"></a> <div class="sliderDescription"><a href="#" data-cktag="New Phyrexia Foil: Mutagenic Growth" tabindex="0"><span class="sliderDescriptionName">New Phyrexia Foil: Mutagenic Growth</span> <span class="sliderDescriptionPrice">$5.50 / $7.15</span></a></div></div></div>
+        </div>
+        <div class="cartas1">
+            <div><div class="catalogItem black cardItem" style="width: 100%; display: inline-block;"><a href="#" data-cktag="Kamigawa: Neon Dynasty Variants Foil: Lion Sash (Showcase)" class="black cardLink" tabindex="0"><img src="lion.jpg" alt="Kamigawa: Neon Dynasty Variants Foil: Lion Sash (Showcase)" title="Kamigawa: Neon Dynasty Variants Foil: Lion Sash (Showcase)" class="sliderItemcardSrcb-lazy" style="opacity: 1;"></a> <div class="sliderDescription"><a href="#" data-cktag="Kamigawa: Neon Dynasty Variants Foil: Lion Sash (Showcase)" tabindex="0"><span class="sliderDescriptionName">Kamigawa: Neon Dynasty Variants Foil: Lion Sash (Showcase)</span> <span class="sliderDescriptionPrice">$5.60 / $7.28</span></a></div></div></div>
+        </div>
+        <div class="cartas1">
+            <div><div class="catalogItem noBorder cardItem" style="width: 100%; display: inline-block;"><a href="#" data-cktag="Kamigawa: Neon Dynasty Variants Foil: Sokenzan, Crucible of Defiance (Borderless)" class="noBorder cardLink" tabindex="0"><img src="sokenzan.jpg" alt="Kamigawa: Neon Dynasty Variants Foil: Sokenzan, Crucible of Defiance (Borderless)" title="Kamigawa: Neon Dynasty Variants Foil: Sokenzan, Crucible of Defiance (Borderless)" class="sliderItemcardSrcb-lazy" style="opacity: 1;"></a> <div class="sliderDescription"><a href="#" data-cktag="Kamigawa: Neon Dynasty Variants Foil: Sokenzan, Crucible of Defiance (Borderless)" tabindex="0"><span class="sliderDescriptionName">Kamigawa: Neon Dynasty Variants Foil: Sokenzan, Crucible of Defiance (Borderless)</span> <span class="sliderDescriptionPrice">$4.40 / $5.72</span></a></div></div></div>
+        </div>
+        <div class="cartas1">
+            <div><div class="catalogItem black cardItem" style="width: 100%; display: inline-block;"><a href="#" data-cktag="Kamigawa: Neon Dynasty Variants Foil: March of Otherworldly Light (Showcase)" class="black cardLink" tabindex="0"><img src="march.jpg" alt="Kamigawa: Neon Dynasty Variants Foil: March of Otherworldly Light (Showcase)" title="Kamigawa: Neon Dynasty Variants Foil: March of Otherworldly Light (Showcase)" class="sliderItemcardSrcb-lazy" style="opacity: 1;"></a> <div class="sliderDescription"><a href="#" data-cktag="Kamigawa: Neon Dynasty Variants Foil: March of Otherworldly Light (Showcase)" tabindex="0"><span class="sliderDescriptionName">Kamigawa: Neon Dynasty Variants Foil: March of Otherworldly Light (Showcase)</span> <span class="sliderDescriptionPrice">$4.40 / $5.72</span></a></div></div></div>
+        </div>
+
+
+    </div>
+    <hr class="featurette-divider">
+    <!----fin de la prueba html agregada--->
+
+
+
+
+    
+    <!----Esto son las tres columnas-->
+    <div class="column">
+      <div class="propiety">
+        
+        <img src="forest.jpg"  width="140" height="140" />
+        <h2>Sell your carts</h2>
+        <p>Get a good price for those old carts that you no longer use</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <div class="propiety">
+        
+        <img src="xenagos.jpg"  width="140" height="140" />
+        <h2>Starts Commander</h2>
+        <p>Commander is an unique way to play Magic that is all about awesome legendary creatures and battling your friends in epic multiplayer games! </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <div class="propiety">
+        
+        <img src="island.png"  width="140" height="140" />
+        <h2>Know your format</h2>
+        <p>There are tons of different formats for playing Magic, and each one dictates which cards you can use in a given game. meet them here</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      
+    </div>
+    <hr class="featurette-divider">
+
+    <!---- esto es los 3 parrafos finales-->
+    <div class="Medios">
+        <div class="texto-medio"> 
+        <h2 class="Titulos">Kamigawa</h2> 
+        <p class="texto-titulos">Discover Kamigawa, a world where magic meets technology! Neon Dynasty reflects the best of players, lands, characters, creatures, and artifacts. In the future, you will look amazing. </p>
+        </div>
+        <div class="imgtext">
+            <img widht="500px" src="kamigawa1.jpg" />
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="Medios">
+        <div class="imgtext2">
+            <img widht="500px" src="olivia.jpg" />
+        </div>
+        <div class="texto-medio2"> 
+        <h2 class="Titulos">Innistrad: Crimson Vow</h2> 
+        <p class="texto-titulos">Innistrad Scarlet Pledge is the second part of Magic: The Gathering's return to the realm of terror. It tells the story of Olivia Voldaren's wedding after a failed ritual to save the world from eternal night. </p>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="Medios">
+        <div class="texto-medio"> 
+        <h2 class="Titulos">Midnight hunt</h2> 
+        <p class="texto-titulos">Find out what lurks in Innistrad's eternal night with eight high-contrast black and white cards from Innistrad: Midnight Hunt and Innistrad: Scarlet Pledge. There may be exclusive silver screen foil cards in all packs! </p>
+        </div>
+        <div class="imgtext">
+            <img widht="500px" src="midnight-hunt.jpg" />
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!---------Esto es el footer-->
+    <hr class="featurette-divider">
+    <div class="Footer">
+        <br></br>      
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2012–2022 Papux Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer> 
+        <br></br>  
+    </div>
+</body>
+</html>
