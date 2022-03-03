@@ -23,6 +23,7 @@ z-index: 1;
 
 /*logo izquierda y menu aparte (992px por propiedad pagina responsive)*/
 /*podemos agregar max width para dispositivos muy anchos*/
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,10 @@ z-index: 1;
     margin: 0 auto;
     flex-wrap: inherit;
     font-size: 1rem;
+}
+
+.h2{
+    font-family: sans-serif;
 }
 
 .nav-link {
@@ -130,61 +135,8 @@ width: max-content;
 
 }
 
-ul, li{
-    list-style:none;
-}
-
-ul.slider{
-    padding:0;
-    margin:0;
-    position:relative;
-    width: 100%;
-    height: 600px;
-}
-
-ul.slider li{
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0; 
-    width:inherit;
-    height: inherit;
-    background-color:white;
-    transition: opacity .5s;
-    
-
-}
-
-ul.slider li img{
-    width: 100%;
-    height:600px;
-    object-fit: cover;
-}
 
 
-ul.slider li:first-child {
-opacity: 1;
-}
-
-ul.slider li:target{
-    opacity: 1;
-}
-
-ul.slider li texto-slider1 button.btn {
-    opacity: 1;
-}
-
-ul.slider li texto-slider1 button.btn:first-child {
-    opacity: 1;
-}
-
-.texto-slider1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0s;
-}
 
 
 /* ajuste botones sliders*/
@@ -219,18 +171,11 @@ border-bottom: 10px solid transparent;
 }
 
 
-/* ajustes texto y botones slider */
-.texto-slider1{
-    font-size: 50px;
-    color: white;
-    text-align: right !important;
-    right: 15%;
-}
-
 /* armamos las 3 columnas del medio*/
 .column{
     display: flex;
     box-sizing: border-box;
+    padding: 0 100px 0;
 }
 .circle{
     border-radius:100%;
@@ -253,7 +198,7 @@ border-bottom: 10px solid transparent;
 .featurette-divider{
 height: 1px;
 color: white;
-margin: 4rem 0;
+margin: 2rem 0;
 }
 
 .float-end{
@@ -340,10 +285,18 @@ margin-top: var(--bs-gutter-y);
     color:#5a5a5a
 }
 
+.btntres{
+    text-align: center;
+    position: relative;
+    top:-70px!important;
+}
+
+
+
 /*---- esto es parte de la prueba html----*/
 .contenedor-cartas{
     display:flex;
-    padding: 0 200px 150px;
+    padding: 0 200px 100px;
     text-align: center;
     
   
@@ -363,14 +316,94 @@ margin-top: var(--bs-gutter-y);
     width:auto!important;
 }
 
-.prueba{
+.prueba h2{
     text-align: center;
     padding: 0 0 40px;
-    font-size: 50px;
+    font-size: 50px!important;
+    font-weight: 700!important;
+    font-family: sans-serif;
 }
 /*---- fin parte de la prueba html----*/
 
+/*-----nuevo slider---------*/
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 25px;
+    background-color: #0769e9 !important;
+  }
 
+  .w3-hover-white:hover{
+    background-color: #0769e9 !important;
+    }
+
+  .w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+  }
+  
+  .w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+  }
+
+  .w3-display-bottomright.w3-large.w3-container.w3-padding-16.w3-black {
+    border-radius: 5px !important;
+    border-color: #fff;
+    background: transparent !important;
+    Font-Weight: 700;
+    border: 2px solid #fff;
+  }
+
+  .w3-badge.demo.w3-border.w3-transparent.w3-hover-white{
+display: inline-block;
+text-align: center;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+height: 25px;
+width: 25px;
+  }
+
+  .w3-transparent{
+    background-color: #00000085 !important;
+  }
+  .w3-black{
+    background-color: #000000c4 !important;
+  }
+  .w3-display-bottomleft.w3-large.w3-container.w3-padding-16.w3-black{
+
+    font-size: 100px !important;
+  }
+
+  .w3-content{
+    max-width: max-content;
+  }
+
+  .w3-content.w3-display-container{
+    padding: 0 10px;
+    width: 100%;
+    height: 600px !important;
+  }
+  .Slidercentral{
+    top: -70px !important;
+    position: relative;
+    padding: 0 10px;
+    width: 100%;
+    height: 600px !important;
+  }
+/*-----fin arreglo ultimo slider------*/
 
 
 /*------------modificaciones en responsive----------*/
@@ -435,6 +468,7 @@ margin-top: var(--bs-gutter-y);
     /*Arreglo 3 columnas del medio*/
     .column{
         display: block;
+        padding: 0 0 0!important;
     }
     .propiety{
         width: 100%;
@@ -480,6 +514,7 @@ margin-top: var(--bs-gutter-y);
     .prueba{
         display:none;
     }
+    
     ul.slider{
         
         height: 400px;
@@ -487,6 +522,28 @@ margin-top: var(--bs-gutter-y);
     ul.slider li img{
         height:400px;
     }
+    .w3-display-container img{
+    height: 400px !important;
+    width: 100%;
+    object-fit: cover;  
+    } 
+    .btntres{
+    text-align: center;
+    }
+    .w3-display-bottomleft.w3-large.w3-container.w3-padding-16.w3-black{
 
+        font-size: 20px !important;
+        background-color: #00000082 !important;
+      }
+      .Slidercentral{
+        top:0px!important;
+        height:auto!important;
+      }
+      .w3-content.w3-display-container{
+        height:auto!important;
+      }
+      .btntres{
+          top:0px!important;
+      }
 }
 
