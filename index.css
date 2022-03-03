@@ -480,6 +480,13 @@ margin-top: var(--bs-gutter-y);
     .prueba{
         display:none;
     }
+    ul.slider{
+        
+        height: 400px;
+    }
+    ul.slider li img{
+        height:400px;
+    }
 
 }
 
