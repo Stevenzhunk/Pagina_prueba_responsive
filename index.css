@@ -296,7 +296,7 @@ margin-top: var(--bs-gutter-y);
 /*---- esto es parte de la prueba html----*/
 .contenedor-cartas{
     display:flex;
-    padding: 0 200px 200px;
+    padding: 0 100px 200px;
     text-align: center;
     
   
@@ -308,7 +308,7 @@ margin-top: var(--bs-gutter-y);
 
 
 .cartas1{
-    width: 180px!important;
+    width: 100%;
     height:250px!important;
     padding: 10px 20px 20px;
 }
