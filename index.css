@@ -378,14 +378,14 @@ body {
 .w3-content.w3-display-container {
   padding: 0 10px;
   width: 100%;
-  height: 600px !important;
+  
 }
 .Slidercentral {
-  top: -70px !important;
+  
   position: relative;
   padding: 0 10px;
   width: 100%;
-  height: 600px !important;
+  
 }
 .w3-display-container img {
   object-fit: contain;
